@@ -10,7 +10,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -65,12 +64,12 @@ fun ArticleText(heading: String, intro: String, description: String, modifier: M
             text = heading,
             fontSize = 24.sp,
             modifier = Modifier
-                .padding(16.dp)
+                .padding(16.dp),
         )
         Text(
             text = intro,
             modifier = Modifier
-                .padding(16.dp),
+                .padding(start = 16.dp, end = 16.dp, bottom = 16.dp),
             textAlign = TextAlign.Justify
         )
         Text(
